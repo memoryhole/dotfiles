@@ -174,8 +174,13 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+smart_gaps on
+smart_borders on
+gaps inner 10
+gaps outer 10
+
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
-client.focused #81a2be #81a2be #1d1f21 #282a2e
-client.focused_inactive #373b41 #373b41 #969896 #282a2e
-client.unfocused #282a2e #282a2e #969896 #282a2e
-client.urgent #373b41 #cc6666 #ffffff #cc6666
+client.focused #6699CC #6699CC #1B2B34 #6699CC
+client.focused_inactive #5FB3B3 #5FB3B3 #D8DEE9 #A7ADBA
+client.unfocused #343D46 #343D46 #D8DEE9 #343D46
+client.urgent #EC5f67 #EC5f67 #1B2B34 #EC5f67
