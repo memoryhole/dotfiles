@@ -108,3 +108,5 @@ source /usr/share/nvm/init-nvm.sh
 
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 compdef config=git
+
+export PATH=$PATH:$HOME/.nimble/bin:$HOME/bin
