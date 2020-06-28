@@ -1,0 +1,2 @@
+#!/bin/bash
+cat /proc/cpuinfo | sed -ne 's/cpu MHz[[:space:]]*: //p' | sort -n | tail -n 1 | xargs printf "%.*f\n" 0
